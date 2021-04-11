@@ -1,0 +1,11 @@
+#!/bin/bash
+source venv/bin/activate
+
+while sleep 1; do
+
+v4l2-ctl -d /dev/video4 --set-ctrl=exposure_auto=1
+v4l2-ctl -d /dev/video4 --set-ctrl=exposure_absolute=40
+v4l2-ctl -d /dev/video4 --set-ctrl=focus_auto=0
+v4l2-ctl -d /dev/video4 --set-ctrl=focus_absolute=0
+python main.py
+done
