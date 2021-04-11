@@ -68,8 +68,20 @@ Teach skip button location:
 
  * Keep watching ads until you get a skip button as well.
  * Pause it again and draw the square tight around the skip button
+ * Press 's' to teach it the "skip button location"
  * It should immediately skip the ad.
 
 Everything is saved, so as long as you dont move the camera, you dont have to teach it again.
 
 Happy skipping!
+
+### Visual feedback
+
+The color of the square means:
+ * Red: Its sure the image is not detected. (similarity is below config.undetect_threshold )
+ * Gray: Its not sure
+ * Green: Its sure the image is detected (similarity above config.detect_threshold )
+
+If its detected for config.detected_frames frames the it will actually act on it. (And show DETECTED)
+
+Tune the parameters in config.py if needed.
