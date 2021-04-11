@@ -82,6 +82,6 @@ The color of the square means:
  * Gray: Its not sure
  * Green: Its sure the image is detected (similarity above config.detect_threshold )
 
-If its detected for config.detected_frames frames the it will actually act on it. (And show DETECTED)
+If its detected for config.detected_frames frames, it will actually act on it. (And show DETECTED)
 
 Tune the parameters in config.py if needed.
