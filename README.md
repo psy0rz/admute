@@ -10,7 +10,7 @@ It constantly monitors your tv screen and watches for the tiny ADS icon in the t
 
 As soon as it appears it will mute the tv so you don't get annoyed by the ads so much. (it really helps :)
 
-It will also the Skip button when it appears.
+It will also press the Skip button when it appears.
 
 It should be fairly easy to modify to use with other TVs or apps as well.
 
@@ -30,10 +30,12 @@ Tested on Ubuntu 20.04
 
 ### Configure webcam
 
+Look in ./run for an example of the exposure and focus settings.
+
  * Point your webcam on the screen in a fixed way. Make sure it cant move after you've learned it to recognize ads.
  * Disable auto exposure and auto focus.
  * Make sure to adjust the exposure so the ADS icon is cleary visible and not too bright.
- * It doesnt matter if its a bit out of focus, but its important the focus stays fixed.
+ * It doesnt matter if its a bit out of focus, but its important the focus stays fixed and the white/yellow is visible.
  * Also make sure the Skip button in the lower right is visible.
 
 ### Edit config.py
@@ -51,7 +53,7 @@ Tested on Ubuntu 20.04
 
 First find and pause an ad:
 
- * Start watchting youtube on your TV until you get an ad.
+ * Start watching youtube on your TV until you get an ad.
  * Press pause button
  * press back button once, so the lower bar disappears again.
 
